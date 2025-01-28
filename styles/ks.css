@@ -157,6 +157,7 @@ main{
 .stories{
     background-image: url(../assets/bg.png);
     background: linear-gradient(to bottom, #FFFFFF, #FFF4DC);
+    padding-bottom: 3.75rem;
 }
 .s-btn{
 justify-content: center;
@@ -221,6 +222,43 @@ display: flex;
 .s-1-con{
     margin: 34px 40px;
 }
+/* Footer */
+footer{
+    background-color: #01ACFD;
+}
+.footer-p{
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+    font-size: 1.25rem;
+}
+.footer-t{
+    color: white;
+    font-weight: bold;
+    font-size: 2.634rem;
+}
+.footer-con{
+    justify-content: space-between;
+    padding: 160px;
+    align-items: center;
+}
+.as-t{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.as-p{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.kip{
+    font-size: 1.625rem;
+    color: white;
+}
+.f-img{
+    width: 100%;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
     .banner{
@@ -244,8 +282,12 @@ display: flex;
      }
      .sf{
         flex-direction: column;
+        width: 100%;
      }
      .story-1{
         display: none;
+     }
+     .footer-con{
+        flex-direction: column;
      }
 }
