@@ -126,25 +126,45 @@ main{
     font-weight: bold;
     color: #8700FF;
 }
-.Kinder{
+.kinder{
     background: linear-gradient(to top, #FFFFFF, #DEF5FF);
     border-radius: 18.86px;
     text-align: center;
+    padding: 3rem 2.5rem;
+    margin-right: 28px;
+
 }
-.Elementary{
+.elementary{
     background: linear-gradient(to top, #FFFFFF, #FFF4DC);
     border-radius: 18.86px;
     text-align: center;
+    padding: 3rem 2.5rem;
+    margin-right: 28px;
+    
 }
 .middle{
     background: linear-gradient(to top, #FFFFFF, #F2E8FF);
     border-radius: 18.86px;
     text-align: center;
+    padding: 3rem 2.5rem;
+    
+}
+.cards{
+    max-width: 1160px;
+    margin: 80px auto;
 }
 /* section stories */
 .stories{
-    background: linear-gradient(to top, #FFF4DC, #FFFFFF), url(../assets/bg.png);
-
+    background-image: url(../assets/bg.png);
+    background: linear-gradient(to bottom, #FFFFFF, #FFF4DC);
+}
+.s-btn{
+justify-content: center;
+display: flex;
+}
+.sf{
+    max-width: 1160px;
+    margin: 80px auto;
 }
 .story-t{
     font-weight: bold;
@@ -159,6 +179,48 @@ main{
     font-size: 1.5rem;
     font-weight: bold;
 }
+.s-img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.story-1{
+    max-width: 540.27px;
+    background-color: white;
+    border-radius: 16px;
+    margin-right: 19px;
+}
+.story-2{
+    background-color: white;
+    border-radius: 16px;
+
+}
+.story-3{
+    background-color: white;
+    border-radius: 16px;
+
+}
+.story-4{
+    background-color: white;
+    border-radius: 16px;
+
+}
+.story-5{
+    background-color: white;
+    border-radius: 16px;
+
+}
+.sgrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+.story-content{
+    margin: 28px 38px;
+}
+.s-1-con{
+    margin: 34px 40px;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
     .banner{
@@ -169,5 +231,21 @@ main{
      }
      .banner-content{
         text-align: center;
+     }
+     .cards{
+        flex-direction: column;
+     }
+     .kinder,.elementary,.middle{
+        width: 90%;
+        margin: auto;
+     }
+     .curriculum{
+        padding: 0;
+     }
+     .sf{
+        flex-direction: column;
+     }
+     .story-1{
+        display: none;
      }
 }
