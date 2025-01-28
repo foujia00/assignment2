@@ -21,14 +21,26 @@
 .clr-pur{
     color: #5D58EF;
 }
+.clr-black{
+    color: black;
+}
+.font-n{
+    font-weight: 500;
+    font-size: 20px;
+}
 .primary-btn{
-    background-color: #FEA301;
     color: white;
     border-radius: 12px;
     padding: 10px 20px;
     font-size: 1.25rem;
     font-weight: 600;
     border: none;
+}
+.btn-1{
+    background-color: #FEA301;
+}
+.btn-2{
+    background-color: black;
 }
 /* Nav style */
 .navbar{
@@ -50,7 +62,12 @@
     font-size: 32px;
     font-weight: bold;
 }
-
+.img-1{
+    width: 100%;
+}
+/* .hamburger{
+    display: none;
+} */
 /* Banner style */
 .banner{
     align-items: center;
@@ -70,8 +87,87 @@
 .banner-img{
     width: 100%;
 }
+/* main */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* section curriculum */
+.curriculum{
+    background-image: url(../assets/bg.png);
+    padding: 60px;
+}
+.sc-t{
+    font-size: 2.875rem;
+    font-weight: bold;
+    text-align: center;
+}
+.kinder-t{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.kinder-p{
+    color: #808080;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.read-1{
+    color: #64C8FF;
+    font-size: 0.943rem;
+    font-weight: bold;
+}
+.read-2{
+    color: #F0AA00;
+    font-size: 0.943rem;
+    font-weight: bold;
+}
+.read-3{
+    font-size: 0.943rem;
+    font-weight: bold;
+    color: #8700FF;
+}
+.Kinder{
+    background: linear-gradient(to top, #FFFFFF, #DEF5FF);
+    border-radius: 18.86px;
+    text-align: center;
+}
+.Elementary{
+    background: linear-gradient(to top, #FFFFFF, #FFF4DC);
+    border-radius: 18.86px;
+    text-align: center;
+}
+.middle{
+    background: linear-gradient(to top, #FFFFFF, #F2E8FF);
+    border-radius: 18.86px;
+    text-align: center;
+}
+/* section stories */
+.stories{
+    background: linear-gradient(to top, #FFF4DC, #FFFFFF), url(../assets/bg.png);
 
+}
+.story-t{
+    font-weight: bold;
+    font-size: 2.875rem;
+    text-align: center;
+}
+.sh{
+    font-size: 0.959rem;
+    font-weight: bold;
+}
+.s1h{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 /* responsive */
 @media screen and (max-width: 576px) {
-    
+    .banner{
+        flex-direction: column-reverse;
+    }
+     .nav-t, .nav-links, .btn-1{
+        display: none;
+     }
+     .banner-content{
+        text-align: center;
+     }
 }
